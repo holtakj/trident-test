@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  trident-test:
+    restart: "no"
+    build: "."
+    image: trident-test:latest
+
