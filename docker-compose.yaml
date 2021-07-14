@@ -5,4 +5,7 @@ services:
     restart: "no"
     build: "."
     image: trident-test:latest
+    environment:
+      NFS_TARGET: "nfs://10.253.15.10/tmp/hack.txt"
+
 

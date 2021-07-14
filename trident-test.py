@@ -1,6 +1,7 @@
 import libnfs
+import os
 
-target = 'nfs://10.253.15.10/tmp/hack.txt'
+target = os.environ['NFS_TARGET']
 
 print("Trident Test using " + target, flush=True)
 print("Output:", flush=True)
